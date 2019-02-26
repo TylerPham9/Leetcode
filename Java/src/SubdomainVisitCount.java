@@ -21,6 +21,7 @@ class SubdomainVisitCount {
                 }
             map.put(s, map.getOrDefault(s, 0 ) + visits);
             }
+
         List<String> result = new ArrayList<>();
         for (Map.Entry<String, Integer> pair : map.entrySet()){
             result.add(pair.getValue() + " " + pair.getKey());
